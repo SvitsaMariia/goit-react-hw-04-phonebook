@@ -1,0 +1,44 @@
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .contactListItem {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactListItem::before {
+    content: '\2022';
+    color: var(--light-violet-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 16px;
+  }
+  
+  .contactListItemText {
+    margin-right: auto;
+  }
+  
+  .contactListItemBtn {
+    min-width: 62px;
+    min-height: 20px;
+  
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white-color);
+  
+    background-color: var(--light-violet-color);
+    border-radius: 5px;
+    transition: color var(--transition), background-color var(--transition),
+      box-shadow var(--transition);
+  }
+  
+  .contactListItemBtn:hover,
+  .contactListItemBtn:focus {
+    color: var(--white-color);
+    background-color: var(--dark-violet-color);
+    box-shadow: var(--light-box-shadow);
+  }
