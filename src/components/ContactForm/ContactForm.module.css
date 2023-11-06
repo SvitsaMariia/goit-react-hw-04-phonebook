@@ -1,56 +1,43 @@
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 10px;
-    background-color: var(--light-violet-color);
-    border: 3px solid transparent;
-    border-radius: 5px;
-  }
-  
-  .contactFormLabel {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-style: italic;
-    font-weight: 500;
-    color: white;
-  }
-  
-  .contactFormInput {
-    width: 300px;
-    height: 26px;
-    padding-left: 10px;
-    outline: 3px solid transparent;
-    border-radius: 5px;
-  }
-  
-  .contactFormInput:focus {
-    outline-color: var(--ice-blue-color);
-  }
-  
-  .addContactBtn {
-    min-width: 132px;
-    min-height: 32px;
-    margin: 0 auto;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    font-weight: 500;
-    color: var(--dark-violet-color);
-  
-    background-color: var(--white-color);
-    border-radius: 5px;
-    transition: color var(--transition), background-color var(--transition),
-      box-shadow var(--transition);
-  }
-  
-  .addContactBtn:hover,
-  .addContactBtn:focus {
-    color: var(--white-color);
-    background-color: var(--dark-violet-color);
-    box-shadow: var(--light-box-shadow);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.contactFormLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contactFormInput {
+  width: 200px;
+  height: 20px;
+}
+
+.addContactBtn {
+  min-width: 120px;
+  min-height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  border-radius: 5px;
+  transition: color var(--transition), background-color var(--transition),
+    border-color var(--transition), box-shadow var(--transition);
+}
+
+.addContactBtn:hover,
+.addContactBtn:focus {
+  color: var(--white-color);
+  background-color: var(--light-violet-color);
+  border-color: var(--light-violet-color);
+  box-shadow: var(--light-box-shadow);
+}
